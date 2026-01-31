@@ -1,4 +1,3 @@
-export const AppConstants ={
-BACKEND_URL:'http://localhost:8082/api',
-
-}
+export const AppConstants = {
+  BACKEND_URL: "https://authentication-backend-production-ba62.up.railway.app/api",
+};
