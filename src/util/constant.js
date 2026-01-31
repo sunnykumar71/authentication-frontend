@@ -1,3 +1,3 @@
 export const AppConstants = {
-  BACKEND_URL: "https://authentication-backend-production-ba62.up.railway.app/api",
+  BACKEND_URL: import.meta.env.VITE_BACKEND_URL,
 };
