@@ -5,6 +5,10 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import EmailVerify from './pages/EmailVerify'
 import ResetPassword from './pages/ResetPassword'
+import axios from 'axios'   // 👈 add this
+
+// ✅ send cookies with every request
+axios.defaults.withCredentials = true;
 
 const App = () => {
   return (
@@ -15,7 +19,6 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/email-verify' element={<EmailVerify />} />
         <Route path='/reset-password' element={<ResetPassword />} />
-        
       </Routes>
     </div>
   )
